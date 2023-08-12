@@ -1,6 +1,14 @@
 # Audio Online Express Web Service
 
-### Installation
+## To Start
+Run:
+```
+npm run start
+```
+Run production:
+set NODE_ENV to "production"
+
+## Installation
 
 ```
 npm i express knex pg dotenv --save
@@ -14,6 +22,7 @@ Add PostgreSQL server URL to .env
 ```
 cp .env.sample .env
 ```
+`.env` file:
 ```
-DEVELOPMENT_DATABASE_URL="<postgresql:URL>"
+DEVELOPMENT_DATABASE_URL="<postgres:URL>"
 ```
