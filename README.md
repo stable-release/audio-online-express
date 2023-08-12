@@ -5,7 +5,7 @@ Run:
 ```
 npm run start
 ```
-Run production:
+For production environment:
 set NODE_ENV to "production"
 
 ## Installation
