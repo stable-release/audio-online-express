@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
+const artistsRouter = require("./route_artists/artists.router");
 
 // Parse incoming JSON payloads
 app.use(express.json());
+
+// Routes
+app.use("/artists", artistsRouter);
 
 // Not found handler
 app.use((req, res, next) => {
