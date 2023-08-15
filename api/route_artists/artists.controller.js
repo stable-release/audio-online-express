@@ -52,7 +52,7 @@ async function readArtistName(req, res) {
 }
 
 module.exports = {
-    read: [asyncErrorBoundary(artistExistsq), asyncErrorBoundary(read)],
+    read: [asyncErrorBoundary(artistExists), asyncErrorBoundary(read)],
     readByName: [ asyncErrorBoundary(readArtistName)],
     list: asyncErrorBoundary(list),
 }
