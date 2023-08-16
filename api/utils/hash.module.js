@@ -1,3 +1,4 @@
+require("dotenv").config();
 const argon2 = require("argon2");
 const { ARGON_SECRET, ARGON_TIME, ARGON_MEM, ARGON_PAR } = process.env;
 
