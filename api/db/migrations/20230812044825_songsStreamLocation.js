@@ -7,6 +7,7 @@ exports.up = function(knex) {
     table.integer("song_id").primary(); // Sets songs_id as the primary key
     table.foreign("song_id").references("song_id").inTable("songs").onDelete("cascade"); // Foreign key song_id from table songs
     table.text("song_url");
+    table.timestamps(true, true);
   })
 };
 

@@ -9,6 +9,7 @@ exports.up = function(knex) {
     table.date("song_date");
     table.integer("artist_id"); // Foreign key artist_id from table artists
     table.foreign("artist_id").references("artist_id").inTable("artists").onDelete("cascade");
+    table.timestamps(true, true);
   })
 };
 

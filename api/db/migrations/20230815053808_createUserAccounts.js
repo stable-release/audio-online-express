@@ -8,6 +8,8 @@ exports.up = function (knex) {
         table.string("account_username").unique().notNullable();
         table.text("account_email").unique().notNullable();
         table.text("password").notNullable();
+        table.timestamps(true, true);
+        table.boolean("verified")
     });
 };
 

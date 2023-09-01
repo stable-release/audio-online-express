@@ -1,6 +1,9 @@
 const { PORT = 5000, NODE_ENV } = process.env;
 const app = require("./app");
 const knex = require("./db/connection");
+const { keyGen } = require("./utils/keyGen.module");
+
+keyGen();
 
 const listener = () => console.log(`Listening on Port ${PORT}`);
 

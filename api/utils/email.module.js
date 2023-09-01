@@ -19,9 +19,11 @@ async function sendCode(to, subject, code) {
     
     transporter.sendMail(emailParams, (error, info) => {
         if (error) {
-            console.error(error)
+            const error = new Error(`${error}`);
+            error.status = 404;
+            throw error;
         } else {
-            console.log(`Email Sent: ${info.response}`)
+            return (`${info.response}`)
         }
     });
 }
