@@ -1,12 +1,10 @@
 # Audio Online Express Web Service
-
-## To Start
-Run:
 ```
-npm run start
+npm run knex:production
 ```
-For production environment:
-set NODE_ENV to "production"
+```
+npm run development
+```
 
 ## Installation
 
